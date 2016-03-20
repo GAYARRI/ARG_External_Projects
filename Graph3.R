@@ -1,0 +1,7 @@
+png(file = "plot3.png", ,width=480,height=480)
+plot(SubEnergy$Sub_metering_1/500,col=1,type="l",xlab="",ylab ="Global Active Power (kilowatts)",axes=FALSE)
+lines(SubEnergy$Sub_metering_3/500,col=4,type="l",xlab="")
+lines(SubEnergy$Sub_metering_2/500,col=2,type="l",xlab="")
+axis(1,c(1,1440,2881),c("Thu","Fri","Thu"))
+axis(2,c(0.148,2.1,3.6,5.5),c(0,2,4,6))
+dev.off()
